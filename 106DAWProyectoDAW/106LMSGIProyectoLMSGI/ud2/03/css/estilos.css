@@ -1,0 +1,18 @@
+*{ 
+    background-color: lightcyan;
+}
+body{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+form div>h4{
+    margin-top: 20px;
+}
+legend{
+    margin-bottom: 10px;
+}
+input[type="image"]{
+    margin-top: 10px;
+}

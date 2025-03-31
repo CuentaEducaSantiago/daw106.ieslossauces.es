@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--
+Autor: Santiago González Vicente
+Fecha Modificacion: 18/10/2024
+Descripcion: Formulario
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../../media/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>Ud2.3 Santiago González Vicente</title>
+</head>
+<body>
+    <header>
+        <h1>Plantilla de formulario de series de televisión</h1>
+    </header>
+    <p>Ajustes de volumen:</p>
+    <div>
+        <input type="range" id="vol" name="vol" min="0" max="100">
+        <label for="vol">Volumen</label>
+    </div>
+    <form action="action.php">
+        <fieldset>
+            <legend>Que tipo de genero te gusta:</legend>
+            <p><label for="Accion"><input type="checkbox" name="Accion" value="Accion" id="Accion">Acción(The Last of Us, Fallout, Viquingos)</label></p>
+            <p><label for="Aventura"><input type="checkbox" name="Aventura" value="Aventura" id="Aventura">Aventura(The Mandalorian, Naruto Shipuden, Perdidos)</label></p>
+            <p><label for="Terror"><input type="checkbox" name="Terror" value="Terror" id="Terror">Terror(Supernatural, Stranger things, The walking dead)</label></p>
+            <p><label for="Historico"><input type="checkbox" name="Historico" value="Historico" id="Historico">Histórico(El ministerio del Tiempo, Águila Roja, 1883)</label></p>
+            <p><label for="Suspense"><input type="checkbox" name="Suspense" value="Suspense" id="Suspense">Suspense(Prison break, Sherlock, Dexter)</label></p>
+            <p><label for="Drama"><input type="checkbox" name="Drama" value="Drama" id="Drama">Drama(Breaking Bad, Juego de Tronos, House)</label></p>
+            <p><label for="Fantasia"><input type="checkbox" name="Fantasia" value="Fantasia" id="Fantasia">Fantasía(Outlander, Grimm, Good Omens)</label></p>
+            <p><label for="Romantico"><input type="checkbox" name="Romantico" value="Romantico" id="Romantico">Romántico(El hombre equivocado, Habitación 309, Bella y Bestia)</label></p>
+            <p><label for="Crimen"><input type="checkbox" name="Crimen" value="Crimen" id="Crimen">Crimen(Chicago PD, Lucifer, The Blacklist)</label></p>
+            <p><label for="Comedia"><input type="checkbox" name="Comedia" value="Comedia" id="Comedia">Comedia(Los Simpson, Friends, The Big Bang theory)</label></p>
+            <p><label for="Ciencia_Ficcion"><input type="checkbox" name="Ciencia_Ficcion" value="Ciencia_Ficcion" id="Ciencia_Ficcion">Ciencia Ficción(Rick y Morty, The boys, Los 100)</label></p>
+            <p><label for="Animacion"><input type="checkbox" name="Animacion" value="Animacion" id="Animacion">Animación(Death Note, Castlevania, One piece)</label></p>
+            <input type="image" alt="Enviar" width="100" src="images/enviar.png">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Genero favorito:</legend>
+            <div>
+                <div>
+                    <input type="radio" id="Acc" name="Genero" value="Acc" checked>
+                    <label for="Acc">Acción</label>
+                </div>
+                <div>
+                    <input type="radio" id="Av" name="Genero" value="Av">
+                    <label for="Av">Aventura</label>
+                </div>
+                <div>
+                    <input type="radio" id="Ter" name="Genero" value="Ter">
+                    <label for="Ter">Terror</label>
+                </div>
+                <div>
+                    <input type="radio" id="His" name="Genero" value="His">
+                    <label for="His">Histórico</label>
+                </div>
+                <div>
+                    <input type="radio" id="Sus" name="Genero" value="Sus">
+                    <label for="Sus">Suspense</label>
+                </div>
+                <div>
+                    <input type="radio" id="Dra" name="Genero" value="Dra">
+                    <label for="Dra">Drama</label>
+                </div>
+                <div>
+                    <input type="radio" id="Fan" name="Genero" value="Fan">
+                    <label for="Fan">Fantasía</label>
+                </div>
+                <div>
+                    <input type="radio" id="Rom" name="Genero" value="Rom">
+                    <label for="Rom">Romantico</label>
+                </div>
+                <div>
+                    <input type="radio" id="Cri" name="Genero" value="Cri">
+                    <label for="Cri">Crimen</label>
+                </div>
+                <div>
+                    <input type="radio" id="C" name="Genero" value="C">
+                    <label for="C">Comedia</label>
+                </div>
+                <div>
+                    <input type="radio" id="C_F" name="Genero" value="C_F">
+                    <label for="C_F">Ciencia Ficción</label>
+                </div>
+                <div>
+                    <input type="radio" id="Ani" name="Genero" value="Ani">
+                    <label for="Ani">Animación</label>
+                </div>
+            </div>
+            <input type="image" alt="Enviar" width="100" src="images/enviar.png">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Si quiere crear una cuenta por favor introduzca los siguientes datos:</legend>
+            <div>
+                <label for="Usuario">Usuario: </label> 
+                <input name="Usuario" type="text" placeholder="Nombre de Usuario" maxlength="20" id="Usuario" required>
+                <input type="hidden" id="custId" name="custId" value="3487">
+            </div>
+            <div>
+                <label for="Contraseña">Contraseña: </label> 
+                <input name="Contraseña" type="password" placeholder="Contraseña" minlength="16" maxlength="23" id="Contraseña" required>
+            </div>
+            <div>
+                <label for="Edad">Edad: </label> 
+                <input name="Edad" type="number" placeholder="Edad" min="18" id="Edad" required>
+            </div>
+            <div>
+                <h4>Si quiere recibir notificaciones introduzca: </h4>
+            </div>
+            <div> 
+                <label for="email">gmail</label>
+                <input type="email" placeholder="ejemplo@gmail.com" maxlength="30" minlength="0" name="email" id="email"> 
+            </div> 
+            <div>
+                <label for="phone">Introduzca su teléfono: </label>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            </div>
+            <div>
+                <h4>Opcional:</h4> 
+            </div>
+            <div>
+                <label for="favcolor">Seleciona el color del marco de tu perfil o sera por defecto negro: </label>
+                <input type="color" id="favcolor" name="favcolor" value="#000000">
+            </div>
+            <div>
+                <label for="Imagen_de_Perfil">Introduzca una imagen para su perfil o sera por defecto la inicial de su nombre: </label>
+                <input type="file" id="Imagen_de_Perfil" name="Imagen_de_Perfil">
+            </div>
+            <div>
+                <h4>Comprueba que no eres un bot, introduzca los siguientes datos abajo: </h4>
+                <div>
+                    <img src="images/Fecha-al-2.png" alt="fechas">
+                </div>
+                <p>Introduzca los datos de la 9</p>
+                <div>
+                    <label for="Mes1">Mes: </label>
+                    <input type="month" id="Mes1" name="Mes" >
+                </div>
+                <div>
+                    <label for="week1">Semana: </label>
+                    <input type="week" id="week1" name="Semana">
+                </div>
+                <div>
+                    <label for="Hora1">Hora: </label>
+                    <input type="time" id="Hora1" name="Hora">
+                </div>
+            </div>
+            <input type="reset" value="Reset">
+            <input type="submit" id="Crear_cuenta">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Si quieres ver una págica web que califica las páginas web de forma que tu quieras verlo busque aqui: </legend>
+            <div>
+                <label for="search">Busque aquí: </label>
+                <input type="search" id="search" name="search">
+            </div>
+            <div>
+                <label for="Web">Si quiere saber cuales son las series más populares busque aquí:</label>
+                <input type="url" id="Web" name="Web" value="https://www.sensacine.com/series/top/"> 
+            </div>
+            <input type="image" alt="Enviar" width="100" src="images/enviar.png">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Si tiene una cuenta porfavor introduzca: </legend>
+            <div>
+                <label for="Usuariores">Usuario: </label> 
+                <input name="Usuario" type="text" placeholder="Escribe tu nombre de Usuario" id="Usuariores" required>
+            </div>
+            <div>
+                <label for="Contraseñares">Contraseña: </label> 
+                <input name="Contraseña" type="password" placeholder="Escribe tu Contraseña" id="Contraseñares" required>
+            </div>
+            <div>
+                <h4>Comprueba que no eres un bot, introduzca los siguientes datos abajo: </h4>
+                <div>
+                    <img src="images/Fecha-al-1.png" alt="fechas">
+                </div>
+                <p>Introduzca los datos de la 6</p>
+                <div>
+                    <label for="Mes2">Mes: </label>
+                    <input type="month" id="Mes2" name="Mes" >
+                </div>
+                <div>
+                    <label for="week2">Semana: </label>
+                    <input type="week" id="week2" name="Semana">
+                </div>
+                <div>
+                    <label for="Hora2">Hora: </label>
+                    <input type="time" id="Hora2" name="Hora">
+                </div>
+                <input type="image" alt="Enviar" width="100" src="images/login.png">
+            </div>
+        </fieldset>
+    </form>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Posibles quejas de la página web:</legend>
+                <div>
+                    <label for="T_P">Estilo de página web</label>
+                    <select name="Tamaño de letras y estilo de página web" id="T_P">
+                        <option value="N">Ninguna</option>
+                        <option value="L-P">Letras demasiado pequeñas</option>
+                        <option value="C-M">Color de fondo molesto</option>
+                        <option value="F-I">Pocas preguntas en el formulario</option>
+                        <option value="E-N">Elementos Innecesarios</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="T_P2">Iniciación:</label>
+                    <input list="T_P2s" name="Iniciacion" id="T_P2">
+                    <datalist id="T_P2s">
+                        <option value="N">Ninguna</option>
+                        <option value="D-L">Demasiado lento</option>
+                        <option value="E-D">Elementos descolocados</option>
+                        <option value="E-H">Errores en html</option>
+                        <option value="E-C">Errores en css</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="w3review">Otros errores:</label>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                </div>
+                <input type="image" alt="Enviar" width="100" src="images/enviar.png">
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <details>
+            <summary><time datetime="2024-10-18">2024-2025</time> IES LOS SAUCES. © Santiago González Vicente. Fecha de actualización</summary>
+        </details> 
+    </footer>
+</body>
+</html>
+<!--
+-button: Botón sin un comportamiento específico.
+-checkbox: Casilla de selección. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se usa el atributo checked para indicar si el elemento está seleccionado.
+-color: Control para espicificar un color. Una interfaz de selección de color no requiere más funcionalidad que la de aceptar colores simples como texto.
+date: Control para introducir una fecha.
+-datetime: Obsoleto Control para introducir una fecha y hora, basado en la zona horaria UTC.
+-datetime-local: Control para introducir fecha y hora, sin zona horaria específica.
+-email: Campo para introducir una dirección de correo electrónico.
+-file: Control que permite al usuario seleccionar un archivo. Se puede usar el atributo accept para definir los tipos de archivo que el control podrá seleccionar.
+-hidden: Control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor.
+-image: Botón de envío de formulario con gráfico. Se debe usar el atributo src para definir el origen de la imagen y el atributo alt para definir un texto alternativo. Se puede usar los atributos height y width para definir el tamaño de la imagen en píxeles.
+-month: Control para introducir un mes y año, sin zona horaria específica.
+-number: Control para introducir un número de punto flotante.
+-password: Control de línea simple cuyo valor permanece oculto. Se puede usar el atributo maxlength para especificar la longitud máxima del valor que se puede introducir.
+-radio: Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se usa el atributo checked para indicar si el elemento está seleccionado de forma predeterminada. Los botones radio que tengan el mismo valor para su atributo name están dentro del mismo "grupo de botones radio". Solo un botón radio dentro de un grupo puede ser seleccionado a la vez.
+-range: Control para introducir un número cuyo valor exacto no es importante. Este control usa los siguientes valores predeterminados si no se especifica cada atributo:
+·min: 0
+·max: 100
+·value: min + (max - min) / 2, o min si max es menor que min
+·step: 1
+-reset: Botón que restaura los contenidos de un formulario a sus valores predeterminados.
+-search: Cuadro de texto de línea simple para introducir textos de búsqueda. Los saltos de línea son eliminados automáticamente del valor introducido.
+-submit: Botón que envía el formulario.
+-tel: Control para introducir un número telefónico. Los saltos de línea son eliminados automáticamente del valor introducido, pero no hay otra sintaxis forzada. Se pueden usar atributos como pattern y maxlength para restringir los valores introducidos en este control.
+-text: Campo de texto de línea simple. Los saltos de línea son eliminados automáticamente del valor introducido
+-time: Control para introducir un valor de tiempo sin zona horaria específica.
+-url: Campo para editar una URL. El valor introducido se valida para que contenga una cadena vacía o una ruta URL absoluta antes de enviarse. Los saltos de línea y espacios en blanco al principio o al final del valor son eliminados automáticamente.
+-week: Control para introducir una fecha que consiste en número de semana del año y número de semana sin zona horaria específica.
+-->
