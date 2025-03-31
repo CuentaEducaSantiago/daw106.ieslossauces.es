@@ -1,0 +1,66 @@
+body{
+    width: 640px;
+    margin-left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 16px;
+    font-style: normal;
+    background-image: url(/media/images/banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+section{
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+div{
+    padding: 10px;
+    border-color: #e0e0e0;
+}
+header{
+    color: #f8f9fa;
+    background-color: #343a40;
+}
+footer{
+    color: #f8f9fa;
+    background-color: #343a40;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 5%;
+}
+h2{
+    text-decoration: overline;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+figure{
+    max-width: 50%;
+}
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+h1{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 32px;
+    font-style: normal;
+}
+h2{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 24px;
+    font-style: normal;
+}
+h3{
+    font-family: "Merriweather", serif;
+    font-weight: 20px;
+    font-style: normal;
+}
