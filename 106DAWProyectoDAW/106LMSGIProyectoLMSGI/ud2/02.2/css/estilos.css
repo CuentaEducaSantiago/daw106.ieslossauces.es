@@ -1,0 +1,213 @@
+body{
+    width: 840px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+th, td { 
+    border: 1px solid black;            
+}
+a{
+    text-decoration: none;
+    color:white;;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    justify-content: space-around;
+}
+div{
+    text-align: center;
+}
+header>div{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #134678;
+}
+header>div>img{
+    width: 180px;
+}
+header, nav{
+    background-color: #134678;
+    color: white;
+}
+nav{
+    background-color: #134678;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: 10px;
+    color:white;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ecf0f1;
+}
+section{
+    background-color: white;
+    border: solid #2980b9;
+    border-radius: 10px;
+}
+section>article{
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+body{
+    margin:0 auto;
+    font-family: Arial, sans-serif;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+article>p{
+    color:white;
+}
+.Home{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    border-radius:2px;
+}
+tr>th:nth-child(1){
+    color:white;
+    background-color: #2980b9;;
+}
+tr:nth-child(1)>th{
+    color:white;
+    background-color: #2980b9;;
+}
+th[colspan="5"]{
+    background-color: #f39c12;
+    color:white;
+}
+article, h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#2980b9;
+}
+abbr{
+    text-decoration: none;
+}
+abbr[ title="CORRAL LOSADA JORGE"], abbr[ title="VICTOR CARRION PESQUERA"], abbr[ title="HERMELINDA RAMOS OSORIO"], abbr[ title="AMBROSIO FERNANDEZ CASADO"], abbr[ title="AMOR RODRIGEZ NAVARRO"], abbr[ title="GISELA FOLGERAL LINDOSO"], abbr[ title="CAMPO SALAMANCA MARÍA DOLORES"]{
+    color: black;
+}
+h2{
+    text-decoration: overline;
+    color: black;
+    text-align: start;
+    padding-left: 10px;
+}
+article{
+    border: solid #2980b9;
+    padding-bottom: 20px;
+}
+table{
+    margin: 20px;
+}
+h1{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 32px;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+h2{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 24px;
+    font-style: normal;
+}
+h3{
+    font-family: "Merriweather", serif;
+    font-weight: 20px;
+    font-style: normal;
+}
+.is{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: end;
+    display: flex;
+}
+i[class="fa-brands fa-github fa-2xl"], i[class="fa-brands fa-facebook fa-2xl"], i[class="fa-brands fa-instagram fa-2xl"], i[class="fa-brands fa-x-twitter fa-2xl"], i[class="fa-brands fa-pinterest fa-2xl"], i[class="fa-brands fa-tiktok fa-2xl"], i[class="fa-solid fa-rss fa-2xl"] {
+    padding-left: 10px;
+}
+
+i[class="fa-brands fa-facebook fa-2xl"]{
+    color: #1877f2;
+}
+
+i[class="fa-brands fa-instagram fa-2xl"]{
+    color:#D43089;
+}
+
+i[class="fa-brands fa-pinterest fa-2xl"]{
+    color: #FF0000;
+}
+
+i[class="fa-solid fa-rss fa-2xl"]{
+    color:yellow;
+}
+article[id="hor"]{
+    background-color: #0000FF;
+    color: #23A5DD;
+}
+article[id="LGMSI"]{
+    background-color: #00FFFF;
+    color: #23A5DD;
+}
+article[id="BBDD"]{
+    background-color: #F39C12;
+    color: #23A5DD;
+}
+article[id="PROG"]{
+    background-color: #9DF312;
+    color: #23A5DD;
+}
+article[id="EDD"]{
+    background-color: #316E8A;
+    color: #23A5DD;
+}
+article[id="SSII"]{
+    background-color: #E44A2F;
+    color: #23A5DD;
+}
+article[id="IPE1"]{
+    background-color: #3B2724;
+    color: #23A5DD;
+}
+article[id="OPTATIVA"]{
+    background-color: #0E0750;
+    color: #23A5DD;
+}
+article[id="INGLES"]{
+    background-color:goldenrod;
+    color: #23A5DD;
+}
+article[id="prof"]{
+    background-color: #134678;
+    color: #23A5DD;
+}
