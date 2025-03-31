@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT universidad (nombre, fechaconstruccion, pais, carreras, asi:asignaturas, alumnos)>
+<!ATTLIST universidad
+xmlns:xsi CDATA #IMPLIED
+xmlns CDATA #IMPLIED
+xmlns:alu CDATA #IMPLIED
+xmlns:asi CDATA #IMPLIED
+xmlns:car CDATA #IMPLIED
+xsi:schemaLocation CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre year CDATA #IMPLIED>
+<!ELEMENT fechaconstruccion (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT carreras (carrera+)>
+<!ELEMENT carrera (nombre?, plan?, creditos?, centro?, subdirector?)>
+<!ELEMENT plan (#PCDATA)>
+<!ELEMENT creditos (#PCDATA)>
+<!ELEMENT centro (#PCDATA)>
+<!ELEMENT subdirector (#PCDATA)>
+<!ATTLIST carrera id ID #IMPLIED
+    codigo IDREF #IMPLIED>
+<!ELEMENT asi:asignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre?, creditos_teoricos?, creditos_practicos?, trimestre?)>
+<!ATTLIST asignatura id ID #IMPLIED
+    titulacion IDREF #IMPLIED
+    codigo IDREF #IMPLIED>
+<!ELEMENT creditos_teoricos (#PCDATA)>
+<!ELEMENT creditos_practicos (#PCDATA)>
+<!ELEMENT trimestre (#PCDATA)>
+<!ELEMENT alumnos (alumno+)*>
+<!ELEMENT alumno (apellido1, apellido2, nombre, sexo, estudios)>
+<!ATTLIST alumno id ID #REQUIRED
+    beca (si) #IMPLIED>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT estudios (carrera, asi:asignaturas, proyecto?)>
+<!ELEMENT proyecto (#PCDATA)>

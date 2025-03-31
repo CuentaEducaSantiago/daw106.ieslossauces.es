@@ -1,0 +1,18 @@
+<!ELEMENT email (remitente, destinatarios, Fecha, Asunto, Mensaje, ficheros-adjunto)>
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatarios (destinatario+)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT Fecha (año, mes, dia )>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT ficheros-adjunto (fichero+)>
+<!ELEMENT fichero (nombre, Tipo-MiMe)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT Tipo-MiMe (#PCDATA)>
+<!ELEMENT Asunto (#PCDATA)>
+<!ELEMENT Mensaje (texto)>
+<!ELEMENT texto (#PCDATA)>
+<!ATTLIST email 
+xmlns:xsi CDATA #REQUIRED
+xsi:noNamespaceSchemaLocation CDATA #REQUIRED>

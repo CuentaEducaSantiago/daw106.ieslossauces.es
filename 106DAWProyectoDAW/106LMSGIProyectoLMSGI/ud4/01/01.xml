@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email SYSTEM "01.dtd">
+<email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">			 
+    <remitente>peper@mail.com</remitente>
+    <destinatarios>
+        <destinatario>maria@mail.com</destinatario>
+        <destinatario>sofia@mail.com</destinatario>
+    </destinatarios>
+    <Fecha>			 
+    <año>2024</año><mes>--11</mes><dia>---25</dia>
+    </Fecha>
+    <Asunto>Cena Navidad 2024</Asunto>
+    <Mensaje>			 
+        <texto><![CDATA[Invitación a la Cena de Navidad Querido/a compañerola:
+        Nos complace invitarte a compartir una noche especial en nuestra Cena de Navidad, que se celebrará en el encantador Parador de Benavente.
+        Detalles del evento: 
+        Fecha: Jueves, 21 de diciembre de 2023 
+        Hora: 21:00 
+        Lugar: Parador de Benavente 
+        Ven a disfrutar de una velada inolvidable llena de buena compañía, deliciosa gastronomía y el espiritu navideño que tanto nos une. Habremos preparado un menú especial pensado para celebrar esta mágica ocasión.
+        Por favor, confirma tu asistencia antes del 15 de diciembre de 2023 respondiendo a este correo o contactando al [teléfono email de contacto]
+        Esperamos contar contigo para hacer de esta cena un momento aún más especial. ¡No faltes! 
+        Con cariño, Director]]></texto>				 
+    </Mensaje>
+    <ficheros-adjunto>
+        <fichero>
+            <nombre>documento.pdf</nombre>
+            <Tipo-MiMe>(application/pdf) imagen.png (image/png) </Tipo-MiMe>					 
+        </fichero>
+        <fichero>
+            <nombre>imagen.png</nombre>
+            <Tipo-MiMe>(image/png)</Tipo-MiMe>
+        </fichero>
+    </ficheros-adjunto>
+</email>

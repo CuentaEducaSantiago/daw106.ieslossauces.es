@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Declaración tipo: tipoEmail-->
+<xs:complexType name="tipoEmail">
+    <xs:sequence>
+    <!--Declaración Elemento: remitente-->
+        <xs:element name="remitente" type="xs:string"/>
+    <!--Declaración Elemento: destinatarios-->
+        <xs:element name="destinatarios" type="tipoDestinatarios"/>
+    <!--Declaración Elemento: Fecha-->
+        <xs:element name="Fecha" type="tipoFecha"/>
+    <!--Declaración Elemento: Asunto-->
+        <xs:element name="Asunto" type="xs:string"/>
+    <!--Declaración Elemento: Mensaje-->
+        <xs:element name="Mensaje" type="tipoMensaje"/>
+    <!--Declaración Elemento: ficheros-adjunto-->
+        <xs:element name="ficheros-adjunto" type="tipoFicheroAdjunto"/>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración tipo: tipoDestinatarios-->
+<xs:complexType name="tipoDestinatarios">
+    <xs:sequence>
+    <!--Declaración Elemento: destinatario-->
+        <xs:element name="destinatario" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración tipo: tipoFecha-->
+<xs:complexType name="tipoFecha">
+    <xs:sequence>
+    <!--Declaración Elemento: año-->
+        <xs:element name="año" type="xs:gYear"/>
+    <!--Declaración Elemento: mes-->
+        <xs:element name="mes" type="xs:gMonth"/>
+    <!--Declaración Elemento: dia-->
+        <xs:element name="dia" type="xs:gDay"/>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración tipo: tipoFicheroAdjunto-->
+<xs:complexType name="tipoFicheroAdjunto">
+    <xs:sequence>
+    <!--Declaración Elemento: fichero-->
+        <xs:element name="fichero" type="tipoFichero" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración tipo: tipoFichero-->
+<xs:complexType name="tipoFichero">
+    <xs:sequence>
+    <!--Declaración Elemento: nombre-->
+        <xs:element name="nombre" type="xs:string"/>
+    <!--Declaración Elemento: Tipo-MiMe-->
+        <xs:element name="Tipo-MiMe" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración tipo: tipoMensaje-->
+<xs:complexType name="tipoMensaje">
+    <xs:sequence>
+    <!--Declaración Elemento: texto-->
+        <xs:element name="texto" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<!--Declaración Elemento Raiz: email-->
+    <xs:element name="email" type="tipoEmail"/>
+</xs:schema>

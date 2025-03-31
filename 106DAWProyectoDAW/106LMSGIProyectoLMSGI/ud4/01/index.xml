@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumno SYSTEM "datos.dtd">
+<email>			 
+    <remitente></remitente>
+    <destinatarios>
+        <destinatario></destinatario>
+        <destinatario></destinatario>
+    </destinatarios>
+    <Fecha>			 
+    <dia>text</dia> <mes>text</mes> <año>text</año>
+    </Fecha>
+    <ficheros-adjunto>
+        <fichero>			 
+            <nombre>text</nombre>
+            <Tipo-MiMe>text</Tipo-MiMe>					 
+        </fichero>
+    </ficheros-adjunto>
+    <Asunto>			 
+        						 
+    </Asunto>
+    <Mensaje>			 
+        <texto>text</texto>				 
+    </Mensaje>
+
+</email>

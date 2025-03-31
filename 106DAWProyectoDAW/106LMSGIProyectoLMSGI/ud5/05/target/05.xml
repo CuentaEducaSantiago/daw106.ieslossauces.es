@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../src/05.xsl"?>
+<xml>
+   <root>
+      <row>
+         <fecha>2012</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>53577</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2012</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>315402</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2012</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>24461</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2012</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>254146</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2012</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>122043</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2013</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>57851</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2013</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>277315</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2013</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>25512</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2013</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>249417</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2013</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>132328</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2014</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>61498</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2014</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>246892</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2014</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>26400</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2014</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>246892</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2014</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>124504</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>63991</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>237366</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>26900</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>288624</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>144225</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Seguidores Twitter</concepto>
+         <usuarios_registrados>947</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2015</fecha>
+         <concepto>Seguidores Facebook</concepto>
+         <usuarios_registrados>713</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>67432</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>232648</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>27815</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>301053</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>148993</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Seguidores Twitter</concepto>
+         <usuarios_registrados>1127</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2016</fecha>
+         <concepto>Seguidores Facebook</concepto>
+         <usuarios_registrados>874</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>50464</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>224711</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>26012</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>284921</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>145012</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Seguidores Twitter</concepto>
+         <usuarios_registrados>1230</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Seguidores Facebook</concepto>
+         <usuarios_registrados>1047</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2017</fecha>
+         <concepto>Accesos al OPAC (Online Public Access Catalog)</concepto>
+         <usuarios_registrados>143561</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Usuarios registrados </concepto>
+         <usuarios_registrados>49238</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Préstamos </concepto>
+         <usuarios_registrados>199224</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Asistentes a actividades de animación</concepto>
+         <usuarios_registrados>27975</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Usos de la sala de lectura</concepto>
+         <usuarios_registrados>307897</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Horas de uso multimedia</concepto>
+         <usuarios_registrados>182154</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Seguidores Twitter</concepto>
+         <usuarios_registrados>1297</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Seguidores Facebook</concepto>
+         <usuarios_registrados>1201</usuarios_registrados>
+      </row>
+      <row>
+         <fecha>2018</fecha>
+         <concepto>Accesos al OPAC (Online Public Access Catalog)</concepto>
+         <usuarios_registrados>155116</usuarios_registrados>
+      </row>
+   </root>
+</xml>

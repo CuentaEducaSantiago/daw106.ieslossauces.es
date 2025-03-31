@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.example.com/alumnos"
+           targetNamespace="http://www.example.com/alumnos"
+           elementFormDefault="qualified">
+<!-- Definir el elemento "alumnos", que contiene una lista de alumnos -->
+       <xs:complexType name="tipocarrera">
+              <xs:attribute name="codigo" type="xs:IDREF"/>
+       </xs:complexType>
+       <xs:complexType name="tipoasignaturas">
+       <xs:sequence>
+              <xs:element name="asignatura" type="tipoasignatura" maxOccurs="unbounded"/>
+       </xs:sequence>
+       </xs:complexType>
+       <xs:complexType name="tipoasignatura">
+              <xs:attribute name="codigo" type="xs:IDREF"/>
+       </xs:complexType>
+       <xs:complexType name="tipoEstudios">
+              <xs:sequence>
+                     <xs:element name="carrera" type="tipocarrera"/>
+                     <xs:element name="asignaturas" type="tipoasignaturas"/>
+                     <xs:element name="proyecto" type="xs:string" minOccurs="0"/>
+              </xs:sequence>
+       </xs:complexType>
+       <xs:complexType name="tipoAlumno">
+              <xs:sequence>
+                     <xs:element name="apellido1" type="xs:string" maxOccurs="unbounded"/>
+                     <xs:element name="apellido2" type="xs:string" maxOccurs="unbounded"/>
+                     <xs:element name="nombre" type="xs:string" maxOccurs="unbounded"/>
+                     <xs:element name="sexo" type="xs:string" default="Hombre|Mujer" maxOccurs="unbounded"/>
+                     <xs:element name="estudios" type="tipoEstudios" maxOccurs="unbounded"/>
+              </xs:sequence>
+              <xs:attribute name="id" type="xs:ID" use="optional"/>
+              <xs:attribute name="beca" use="optional" default="no">
+                     <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                   <xs:pattern value="si|no"/>
+                            </xs:restriction>
+                     </xs:simpleType>
+              </xs:attribute>
+       </xs:complexType>
+       <xs:element name="alumnos">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="alumno" type="tipoAlumno" maxOccurs="unbounded"/>
+                     </xs:sequence>
+              </xs:complexType>
+       </xs:element>
+</xs:schema>
