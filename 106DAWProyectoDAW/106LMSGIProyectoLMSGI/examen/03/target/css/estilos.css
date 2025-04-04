@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: auto; padding: 10px; }
+table {
+    margin: auto;
+    border-collapse: collapse; 
+border-color: black;
+border-radius: 5px;}
+table>tr[class="First"]{background-color: #c79999}
+div[class="seccion"] { border: 1px, 1px, 1px, 1px black}
+img { size: 150px}

@@ -1,0 +1,86 @@
+:root{ 
+    --color1:#2C3E50; /*color de fondo header y footer*/ 
+    --color2:yellow;/* titulo nivel 1, menú activo,*/ 
+    --color3:white; 
+    --color4:orange; /* titulo nivel 4*/ 
+    --colorboton:  #3498db; /* color boton*/ 
+    --colorbotonhover: #2980b9; 
+    --colorrequired:lightyellow; /*input con atributo required*/ 
+}
+*{
+    margin: auto;
+    height: auto;
+}
+header, footer{
+    background-color: var(--color1);
+    text-align: center;
+}
+header>div:nth-child(1){
+    background-color: var(--color4);
+}
+body, main{
+    background-color: black;
+    color: var(--color3);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+table, tr, th{
+    border: 2px solid var(--color3);
+}
+nav{
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content:baseline;
+}
+tr{
+    background-color: #001020;
+}
+li{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: var(--color3);
+    text-size-adjust: 20px;
+}
+h2{
+    color:var(--color2);
+}
+a:hover{
+    text-decoration: underline var(--color2);
+}
+main{
+    justify-items: center;
+}
+article{
+    justify-self: center;
+    display: flex;
+}
+main.per{
+    display: flex;
+}
+main.per>div{
+    border: 1px solid var(--color3);
+    padding: 20px;
+}
+h4{
+    color: var(--color4);
+}
+main.LG>article>div{
+    background-color: var(--color3);
+}
+button{
+    background-color: var(--colorbotonhover);
+    color: var(--color3);
+    width: 80px;
+}
+fieldset{
+    background-color: #2c3e4f;
+}
