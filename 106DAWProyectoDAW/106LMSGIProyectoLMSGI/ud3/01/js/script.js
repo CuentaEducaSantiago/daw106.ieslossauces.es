@@ -52,8 +52,13 @@ function saludar(){
 }
 
 function cambiarColor(){
-    var body = document.getElementById("cuerpo");
-    body.style.backgroundColor="#000000";
+    //var body = document.getElementById("cuerpo");
+    // body.style.backgroundColor="#000000";
+    let boton2= document.getElementById("boton2");
+    let body=document.getElementByID("cuerpo");
+    let h1=document.getElementById("titulo");
+    body.classList.toggle("fondo-oscuro");
+
 }
 
 function cambiarpar(){

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://daw101.ieslossauces.es/101LMSGIProyectoLMSGI/ud3/02/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ud3.2 Santiago González Vicente</title>
+      <link rel="stylesheet" href="./css/estilos.css">
+      
+    <link rel="shortcut icon" type="image/jpg" href="../../webroot/favicon/favicon.ico">
+    </head>
+  <body>
+    <h1>Ejemplo 8 DOM: Crear tabla</h1>
+    <label for="filas">Número de filas:</label>
+    <input type="num" id="filas" min="1" max="10" value="2">  
+    <label for="numerocolumnas">Número de columnas:</label>
+    <div>
+      <input type="number" id="numerocolumnas" min="1" max="10" value="2">
+      <input type="button" id="boton" value="Genera una tabla" onclick="genera_tabla()">
+  </div>
+    
+  
+  <script>
+    function genera_tabla(){
+      var cuerpo = document.getElementsByTagName("body")[0];
+      var filas = document.getElementById("filas").value;
+      var columnas = document.getElementById("numerocolumnas").value;
+
+      //Limpiar el contenido del body.
+      cuerpo.innerHTML = '<h1>Ejemplo 8 DOM: Crear tabla</h1> <label for="filas">Número de filas:</label> <input type="number" id="filas" min="1" max="10" value="2"> <label for="numerocolumnas">Número de columnas:</label> <input type="number" id="numerocolumnas"  min="1" max="10" value="2"><input type="button" value="Genera una tabla" onclick="genera_tabla()" />';
+      
+      var tabla = document.createElement("table");
+      var tbody = document.createElement("tbody");
+      for(let f = 1; f<=filas; f++){
+        var tr = document.createElement("tr");
+        for(let c = 1; c<=columnas; c++){
+          var td = document.createElement("td");
+          var textoCelda = document.createTextNode("Fila "+ f +" , Columna "+ c);
+          td.appendChild(textoCelda);
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      }
+      tabla.appendChild(tbody);
+      cuerpo.appendChild(tabla);
+      tabla.setAttribute("border", "2");
+  }
+  </script>
+  </body></html>
