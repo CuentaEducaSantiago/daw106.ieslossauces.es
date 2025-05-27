@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/jpg" href="../../media/favicon/favicon.ico">
-        <title>ud6.1 Cargar JSON en el navegador</title>
+        <link rel="shortcut icon" type="image/ico" href="../../media/favicon/favicon.ico">
+        <title>ud6.2 Santiago González Vicente</title>
     </head>
     <body>
         <header>
-            <h1>Cargar JSON en el navegador</h1>
+            <h1>Listado de personas</h1>
         </header>
         <div id="datos"></div>
         <script>
-            fetch('./01.json').then(response => {
+            fetch('./02.json').then(response => {
                 if (!response.ok) throw new Error("Error en tiempo de ejecución al cargar");
                     return response.json(); //convierte la respuesta en json
                 }
             ).then(jsonData => {
                 const div = document.getElementById("datos");
-                div.innerHTML= `<b>Nombre</b>: ${jsonData.Nombre} <b>Edad</b>: ${jsonData.Edad}`;
+                for(let i=0; i<jsonData.length; i++) {div.innerHTML= `<b>Nombre</b>: ${jsonData[i].Nombre} <b>Edad</b>: ${jsonData[i].Edad} <br>`};
                 console.log(jsonData); // jsonData es un objeto JavaScript
             }).catch(error => console.log( error));
         </script>
