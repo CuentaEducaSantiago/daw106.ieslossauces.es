@@ -1,0 +1,20 @@
+<factura id="F003">
+  <cliente>
+    <nombre>Santiago Monarca</nombre>
+    <email>santiago@example.com</email>
+  </cliente>
+  <importeTotal>300.60</importeTotal>
+</factura>
+<factura id="F002">
+  <cliente>
+    <nombre>María Rodríguez</nombre>
+    <email>maria@example.com</email>
+  </cliente>
+  <importeTotal>200.10</importeTotal>
+</factura>
+<factura id="F001">
+  <cliente>
+    <nombre>Santiago González Vicente</nombre>
+    <email>juan@example.com</email><pagada>"SI"</pagada></cliente>
+  <importeTotal>200</importeTotal>
+</factura>
