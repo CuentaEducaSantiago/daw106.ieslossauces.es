@@ -55,10 +55,14 @@ a:hover {
 /* Footer */
 footer {
     background-color: #232F3E;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    
 }
 
 footer i {
